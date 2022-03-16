@@ -113,10 +113,10 @@ struct MainView: View {
                         }.padding()
 
                         Button("File") {
-                            print("About button tapped!")
+                            print("File button tapped!")
                         }
                         Button("Edit") {
-                            print("About button tapped!")
+                            print("Edit button tapped!")
                         }
                     }, trailing:
                         HStack {
