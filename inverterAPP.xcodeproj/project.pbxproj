@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		48366A2C27E259B1004DE573 /* SettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48366A2B27E259B1004DE573 /* SettingsView.swift */; };
 		485523C227DB933E00C556F2 /* inverterAPPApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 485523C127DB933E00C556F2 /* inverterAPPApp.swift */; };
 		485523C427DB933E00C556F2 /* MainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 485523C327DB933E00C556F2 /* MainView.swift */; };
 		485523C627DB934000C556F2 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 485523C527DB934000C556F2 /* Assets.xcassets */; };
@@ -35,6 +36,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		48366A2B27E259B1004DE573 /* SettingsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsView.swift; sourceTree = "<group>"; };
 		485523BE27DB933E00C556F2 /* inverterAPP.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = inverterAPP.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		485523C127DB933E00C556F2 /* inverterAPPApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = inverterAPPApp.swift; sourceTree = "<group>"; };
 		485523C327DB933E00C556F2 /* MainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainView.swift; sourceTree = "<group>"; };
@@ -73,6 +75,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		48366A2A27E2598F004DE573 /* CommonUI */ = {
+			isa = PBXGroup;
+			children = (
+				485523EB27DB93F200C556F2 /* ProgressBarView.swift */,
+			);
+			path = CommonUI;
+			sourceTree = "<group>";
+		};
 		485523B527DB933E00C556F2 = {
 			isa = PBXGroup;
 			children = (
@@ -98,9 +108,10 @@
 			children = (
 				485523C127DB933E00C556F2 /* inverterAPPApp.swift */,
 				485523C327DB933E00C556F2 /* MainView.swift */,
+				48366A2B27E259B1004DE573 /* SettingsView.swift */,
+				48366A2A27E2598F004DE573 /* CommonUI */,
 				485523C527DB934000C556F2 /* Assets.xcassets */,
 				485523C727DB934000C556F2 /* Preview Content */,
-				485523EB27DB93F200C556F2 /* ProgressBarView.swift */,
 			);
 			path = inverterAPP;
 			sourceTree = "<group>";
@@ -261,6 +272,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				485523C427DB933E00C556F2 /* MainView.swift in Sources */,
+				48366A2C27E259B1004DE573 /* SettingsView.swift in Sources */,
 				485523EC27DB93F200C556F2 /* ProgressBarView.swift in Sources */,
 				485523C227DB933E00C556F2 /* inverterAPPApp.swift in Sources */,
 			);

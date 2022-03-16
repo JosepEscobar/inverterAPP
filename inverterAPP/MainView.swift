@@ -104,6 +104,29 @@ struct MainView: View {
                 }
             }
             .navigationTitle("Inverter APP")
+            .navigationBarItems(leading:
+                    HStack {
+                        Button(action: {
+                            print("Apple button tapped!")
+                        }) {
+                            Image(systemName: "applelogo")
+                        }.padding()
+
+                        Button("File") {
+                            print("About button tapped!")
+                        }
+                        Button("Edit") {
+                            print("About button tapped!")
+                        }
+                    }, trailing:
+                        HStack {
+                            Button(action: {
+                                print("Info button tapped!")
+                            }) {
+                                Image(systemName: "gearshape")
+                            }
+                        }
+                )
         }
     }
 }
