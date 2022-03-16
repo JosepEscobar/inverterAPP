@@ -2,54 +2,109 @@ import SwiftUI
 
 struct MainView: View {
     var body: some View {
-        VStack {
-            HStack {
-                VStack{
-                    ProgressBarView(progressValue: 0.12, tokenCharacter: "%%")
-                        .frame(width: 156, height: 145)
-                    Text("Carga de la batería")
-                        .bold()
+        NavigationView {
+            VStack(alignment: .leading, spacing: 20) {
+                HStack {
+                    VStack{
+                        ZStack {
+                            Color.white
+                                .cornerRadius(10)
+                            VStack{
+                                ProgressBarView(progressValue: 0.12, tokenCharacter: "%%")
+                                    .frame(width: 156, height: 145)
+                                Text("Carga de la batería")
+                                    .font(.caption)
+                                    .bold()
+                                    .padding(.horizontal)
+                            }
+                        }
+                        .frame(width: 150, height: 200)
+                        .shadow(color: Color.black.opacity(0.3), radius: 10, x: 0, y: 0)
+                    }.padding([.bottom, .top])
+                    VStack{
+                        ZStack {
+                            Color.white
+                                .cornerRadius(10)
+                            VStack{
+                                ProgressBarView(progressValue: 0.12, tokenCharacter: "%%")
+                                    .frame(width: 156, height: 145)
+                                Text("Carga salida inversor")
+                                    .font(.caption)
+                                    .bold()
+                                    .padding(.horizontal)
+                            }
+                        }
+                        .frame(width: 150, height: 200)
+                        .shadow(color: Color.black.opacity(0.3), radius: 10, x: 0, y: 0)
+                    }.padding([.bottom, .top, .leading])
                 }
-                VStack{
-                    ProgressBarView(progressValue: 0.52, tokenCharacter: "%%")
-                        .frame(width: 156, height: 145)
-                    Text("Carga salida inversor")
-                        .bold()
+                HStack {
+                    ZStack {
+                        Color.white
+                            .cornerRadius(10)
+                        VStack {
+                            Text("Generación solar")
+                                .bold()
+                            Text("200 W")
+                                .font(.largeTitle)
+                                .bold()
+                        }.padding()
+                    }
+                    .frame(width: 150, height: 100)
+                    .shadow(color: Color.black.opacity(0.3), radius: 10, x: 0, y: 0)
+                    
+                    ZStack {
+                        Color.white
+                            .cornerRadius(10)
+                        VStack {
+                            Text("Consumo vivienda")
+                                .bold()
+                            Text("570 W")
+                                .font(.largeTitle)
+                                .bold()
+                        }.padding()
+                    }
+                    .frame(width: 150, height: 100)
+                    .shadow(color: Color.black.opacity(0.3), radius: 10, x: 0, y: 0)
+                    .padding(.leading)
+                }
+                HStack {
+                    VStack{
+                        ZStack {
+                            Color.white
+                                .cornerRadius(10)
+                            VStack{
+                                ProgressBarView(progressValue: 0.12, tokenCharacter: "%%")
+                                    .frame(width: 156, height: 145)
+                                Text("Carga de la batería")
+                                    .font(.caption)
+                                    .bold()
+                                    .padding(.horizontal)
+                            }
+                        }
+                        .frame(width: 150, height: 200)
+                        .shadow(color: Color.black.opacity(0.3), radius: 10, x: 0, y: 0)
+                    }.padding([.bottom, .top])
+                    VStack{
+                        ZStack {
+                            Color.white
+                                .cornerRadius(10)
+                            VStack{
+                                ProgressBarView(progressValue: 0.12, tokenCharacter: "%%")
+                                    .frame(width: 156, height: 145)
+                                Text("Carga salida inversor")
+                                    .font(.caption)
+                                    .bold()
+                                    .padding(.horizontal)
+                            }
+                        }
+                        .frame(width: 150, height: 200)
+                        .shadow(color: Color.black.opacity(0.3), radius: 10, x: 0, y: 0)
+                    }.padding([.bottom, .top, .leading])
                 }
             }
-            HStack {
-                VStack {
-                    Text("Generación solar")
-                        .bold()
-                    Text("200 W")
-                        .font(.largeTitle)
-                        .bold()
-                }.padding()
-                VStack {
-                    Text("Consumo vivienda")
-                        .bold()
-                    Text("570 W")
-                        .font(.largeTitle)
-                        .bold()
-                }.padding()
-            }
-            HStack {
-                VStack{
-                    ProgressBarView(progressValue: 0.12)
-                        .frame(width: 156, height: 145)
-                    Text("Carga de la batería, mi batería molona")
-                        .bold()
-                }
-                VStack{
-                    ProgressBarView(progressValue: 0.12)
-                        .frame(width: 156, height: 145)
-                    Text("Carga de la batería, mi batería molona")
-                        .bold()
-                }
-            }
+            .navigationTitle("Inverter APP")
         }
-        
-        
     }
 }
 
