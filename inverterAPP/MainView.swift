@@ -104,6 +104,14 @@ struct MainView: View {
                 }
             }
             .navigationTitle("Inverter APP")
+            .navigationBarItems(
+                trailing:
+                    HStack {
+                        NavigationLink(destination: SettingsView()) {
+                            Image(systemName: "gearshape")
+                                .tint(.black)
+                        }
+                    })
         }
     }
 }
