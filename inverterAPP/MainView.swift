@@ -1,6 +1,11 @@
 import SwiftUI
 
 struct MainView: View {
+    enum Constant {
+        static let title: String = "Inverter APP"
+        static let settingsIcon: String = "gearshape"
+    }
+    
     var body: some View {
         NavigationView {
             VStack(alignment: .leading, spacing: 20) {
@@ -22,12 +27,12 @@ struct MainView: View {
                         .padding([.bottom, .top, .leading])
                 }
             }
-            .navigationTitle("Inverter APP")
+            .navigationTitle(Constant.title)
             .navigationBarItems(
                 trailing:
                     HStack {
                         NavigationLink(destination: SettingsView()) {
-                            Image(systemName: "gearshape")
+                            Image(systemName: Constant.settingsIcon)
                                 .tint(.black)
                         }
                     })
