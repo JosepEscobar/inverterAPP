@@ -5,38 +5,10 @@ struct MainView: View {
         NavigationView {
             VStack(alignment: .leading, spacing: 20) {
                 HStack {
-                    VStack{
-                        ZStack {
-                            Color.white
-                                .cornerRadius(10)
-                            VStack{
-                                ProgressBarView(progressValue: 0.12, tokenCharacter: "%%")
-                                    .frame(width: 156, height: 145)
-                                Text("Carga de la batería")
-                                    .font(.caption)
-                                    .bold()
-                                    .padding(.horizontal)
-                            }
-                        }
-                        .frame(width: 150, height: 200)
-                        .shadow(color: Color.black.opacity(0.3), radius: 10, x: 0, y: 0)
-                    }.padding([.bottom, .top])
-                    VStack{
-                        ZStack {
-                            Color.white
-                                .cornerRadius(10)
-                            VStack{
-                                ProgressBarView(progressValue: 0.12, tokenCharacter: "%%")
-                                    .frame(width: 156, height: 145)
-                                Text("Carga salida inversor")
-                                    .font(.caption)
-                                    .bold()
-                                    .padding(.horizontal)
-                            }
-                        }
-                        .frame(width: 150, height: 200)
-                        .shadow(color: Color.black.opacity(0.3), radius: 10, x: 0, y: 0)
-                    }.padding([.bottom, .top, .leading])
+                    GaugeView(progressValue: 0.12, titleText: "Carga de la batería 2")
+                        .padding([.bottom, .top])
+                    GaugeView(progressValue: 0.50, titleText: "Carga salida inversor")
+                        .padding([.bottom, .top, .leading])
                 }
                 HStack {
                     ZStack {
@@ -69,38 +41,10 @@ struct MainView: View {
                     .padding(.leading)
                 }
                 HStack {
-                    VStack{
-                        ZStack {
-                            Color.white
-                                .cornerRadius(10)
-                            VStack{
-                                ProgressBarView(progressValue: 0.12, tokenCharacter: "%%")
-                                    .frame(width: 156, height: 145)
-                                Text("Carga de la batería")
-                                    .font(.caption)
-                                    .bold()
-                                    .padding(.horizontal)
-                            }
-                        }
-                        .frame(width: 150, height: 200)
-                        .shadow(color: Color.black.opacity(0.3), radius: 10, x: 0, y: 0)
-                    }.padding([.bottom, .top])
-                    VStack{
-                        ZStack {
-                            Color.white
-                                .cornerRadius(10)
-                            VStack{
-                                ProgressBarView(progressValue: 0.12, tokenCharacter: "%%")
-                                    .frame(width: 156, height: 145)
-                                Text("Carga salida inversor")
-                                    .font(.caption)
-                                    .bold()
-                                    .padding(.horizontal)
-                            }
-                        }
-                        .frame(width: 150, height: 200)
-                        .shadow(color: Color.black.opacity(0.3), radius: 10, x: 0, y: 0)
-                    }.padding([.bottom, .top, .leading])
+                    GaugeView(progressValue: 0.30, titleText: "Carga salida inversor")
+                        .padding([.bottom, .top])
+                    GaugeView(progressValue: 0.30, titleText: "Carga salida inversor")
+                        .padding([.bottom, .top, .leading])
                 }
             }
             .navigationTitle("Inverter APP")
