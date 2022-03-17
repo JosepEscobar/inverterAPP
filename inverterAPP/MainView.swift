@@ -11,34 +11,9 @@ struct MainView: View {
                         .padding([.bottom, .top, .leading])
                 }
                 HStack {
-                    ZStack {
-                        Color.white
-                            .cornerRadius(10)
-                        VStack {
-                            Text("Generación solar")
-                                .bold()
-                            Text("200 W")
-                                .font(.largeTitle)
-                                .bold()
-                        }.padding()
-                    }
-                    .frame(width: 150, height: 100)
-                    .shadow(color: Color.black.opacity(0.3), radius: 10, x: 0, y: 0)
-                    
-                    ZStack {
-                        Color.white
-                            .cornerRadius(10)
-                        VStack {
-                            Text("Consumo vivienda")
-                                .bold()
-                            Text("570 W")
-                                .font(.largeTitle)
-                                .bold()
-                        }.padding()
-                    }
-                    .frame(width: 150, height: 100)
-                    .shadow(color: Color.black.opacity(0.3), radius: 10, x: 0, y: 0)
-                    .padding(.leading)
+                    CardInfoView(title: "Generación solar", value: "200 W")
+                    CardInfoView(title: "Consumo vivienda", value: "570 W")
+                        .padding(.leading)
                 }
                 HStack {
                     GaugeView(progressValue: 0.30, titleText: "Carga salida inversor")

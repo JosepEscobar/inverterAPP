@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		48366A2C27E259B1004DE573 /* SettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48366A2B27E259B1004DE573 /* SettingsView.swift */; };
 		48366A3127E3A69E004DE573 /* GaugeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48366A3027E3A69E004DE573 /* GaugeView.swift */; };
+		48366A3327E3A90E004DE573 /* CardInfoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48366A3227E3A90E004DE573 /* CardInfoView.swift */; };
 		485523C227DB933E00C556F2 /* inverterAPPApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 485523C127DB933E00C556F2 /* inverterAPPApp.swift */; };
 		485523C427DB933E00C556F2 /* MainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 485523C327DB933E00C556F2 /* MainView.swift */; };
 		485523C627DB934000C556F2 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 485523C527DB934000C556F2 /* Assets.xcassets */; };
@@ -39,6 +40,7 @@
 /* Begin PBXFileReference section */
 		48366A2B27E259B1004DE573 /* SettingsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsView.swift; sourceTree = "<group>"; };
 		48366A3027E3A69E004DE573 /* GaugeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GaugeView.swift; sourceTree = "<group>"; };
+		48366A3227E3A90E004DE573 /* CardInfoView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardInfoView.swift; sourceTree = "<group>"; };
 		485523BE27DB933E00C556F2 /* inverterAPP.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = inverterAPP.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		485523C127DB933E00C556F2 /* inverterAPPApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = inverterAPPApp.swift; sourceTree = "<group>"; };
 		485523C327DB933E00C556F2 /* MainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainView.swift; sourceTree = "<group>"; };
@@ -111,6 +113,7 @@
 				485523C127DB933E00C556F2 /* inverterAPPApp.swift */,
 				485523C327DB933E00C556F2 /* MainView.swift */,
 				48366A3027E3A69E004DE573 /* GaugeView.swift */,
+				48366A3227E3A90E004DE573 /* CardInfoView.swift */,
 				48366A2B27E259B1004DE573 /* SettingsView.swift */,
 				48366A2A27E2598F004DE573 /* CommonUI */,
 				485523C527DB934000C556F2 /* Assets.xcassets */,
@@ -276,6 +279,7 @@
 			files = (
 				48366A3127E3A69E004DE573 /* GaugeView.swift in Sources */,
 				485523C427DB933E00C556F2 /* MainView.swift in Sources */,
+				48366A3327E3A90E004DE573 /* CardInfoView.swift in Sources */,
 				48366A2C27E259B1004DE573 /* SettingsView.swift in Sources */,
 				485523EC27DB93F200C556F2 /* ProgressBarView.swift in Sources */,
 				485523C227DB933E00C556F2 /* inverterAPPApp.swift in Sources */,
