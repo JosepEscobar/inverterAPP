@@ -1,10 +1,3 @@
-//
-//  inverterAPPTests.swift
-//  inverterAPPTests
-//
-//  Created by Josep Escobar on 11/3/22.
-//
-
 import XCTest
 @testable import inverterAPP
 

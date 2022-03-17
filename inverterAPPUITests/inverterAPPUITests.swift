@@ -1,10 +1,3 @@
-//
-//  inverterAPPUITests.swift
-//  inverterAPPUITests
-//
-//  Created by Josep Escobar on 11/3/22.
-//
-
 import XCTest
 
 class inverterAPPUITests: XCTestCase {
