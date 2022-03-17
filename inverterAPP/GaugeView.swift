@@ -25,6 +25,7 @@ struct GaugeView: View {
                 Color.white
                     .cornerRadius(Constant.cornerRadius)
                 VStack{
+                    #warning("TODO: @devscob - remove hardcoded value")
                     ProgressBarView(progressValue: progressValue, tokenCharacter: "%%")
                         .frame(width: Constant.ProgressBarView.width,
                                height: Constant.ProgressBarView.height)
