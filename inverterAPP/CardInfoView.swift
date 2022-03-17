@@ -1,10 +1,3 @@
-//
-//  CardInfoView.swift
-//  inverterAPP
-//
-//  Created by Josep Escobar on 17/3/22.
-//
-
 import SwiftUI
 
 struct CardInfoView: View {
