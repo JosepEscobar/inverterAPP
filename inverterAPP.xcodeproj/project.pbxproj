@@ -19,6 +19,7 @@
 		485523DF27DB934000C556F2 /* inverterAPPUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 485523DE27DB934000C556F2 /* inverterAPPUITestsLaunchTests.swift */; };
 		485523EC27DB93F200C556F2 /* ProgressBarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 485523EB27DB93F200C556F2 /* ProgressBarView.swift */; };
 		489D7CDA27FB5BA40075AB32 /* StatusDataModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 489D7CD927FB5BA40075AB32 /* StatusDataModel.swift */; };
+		489D7CDC27FB9E450075AB32 /* APIClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 489D7CDB27FB9E440075AB32 /* APIClient.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -54,6 +55,7 @@
 		485523DE27DB934000C556F2 /* inverterAPPUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = inverterAPPUITestsLaunchTests.swift; sourceTree = "<group>"; };
 		485523EB27DB93F200C556F2 /* ProgressBarView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProgressBarView.swift; sourceTree = "<group>"; };
 		489D7CD927FB5BA40075AB32 /* StatusDataModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StatusDataModel.swift; sourceTree = "<group>"; };
+		489D7CDB27FB9E440075AB32 /* APIClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIClient.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -160,6 +162,7 @@
 		489D7CD027FB58710075AB32 /* Data */ = {
 			isa = PBXGroup;
 			children = (
+				489D7CDB27FB9E440075AB32 /* APIClient.swift */,
 				489D7CD727FB5B4E0075AB32 /* DataModels */,
 				489D7CD627FB5B170075AB32 /* DataSource */,
 			);
@@ -169,7 +172,7 @@
 		489D7CD127FB587B0075AB32 /* Domain */ = {
 			isa = PBXGroup;
 			children = (
-				489D7CD827FB5B650075AB32 /* domainModels */,
+				489D7CD827FB5B650075AB32 /* DomainModels */,
 				489D7CD527FB59E30075AB32 /* Repository */,
 				489D7CD427FB59CE0075AB32 /* UseCase */,
 			);
@@ -223,11 +226,11 @@
 			path = DataModels;
 			sourceTree = "<group>";
 		};
-		489D7CD827FB5B650075AB32 /* domainModels */ = {
+		489D7CD827FB5B650075AB32 /* DomainModels */ = {
 			isa = PBXGroup;
 			children = (
 			);
-			path = domainModels;
+			path = DomainModels;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -363,6 +366,7 @@
 				48366A3127E3A69E004DE573 /* GaugeView.swift in Sources */,
 				485523C427DB933E00C556F2 /* MainView.swift in Sources */,
 				48366A3327E3A90E004DE573 /* CardInfoView.swift in Sources */,
+				489D7CDC27FB9E450075AB32 /* APIClient.swift in Sources */,
 				48366A2C27E259B1004DE573 /* SettingsView.swift in Sources */,
 				485523EC27DB93F200C556F2 /* ProgressBarView.swift in Sources */,
 				485523C227DB933E00C556F2 /* inverterAPPApp.swift in Sources */,
